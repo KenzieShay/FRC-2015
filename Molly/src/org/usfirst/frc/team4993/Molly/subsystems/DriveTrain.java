@@ -28,9 +28,8 @@ public class DriveTrain extends Subsystem {
     SpeedController speedController1 = RobotMap.driveTrainSpeedController1;
     SpeedController speedController2 = RobotMap.driveTrainSpeedController2;
     static RobotDrive robotDrive4 = RobotMap.driveTrainRobotDrive4;
-    Joystick Joystick1 = OI.joystick1;
-    Joystick Joystick2 = OI.joystick2;
-    
+    static Joystick Joystick1 = OI.joystick1;
+    static Joystick Joystick2 = OI.joystick2;
 
     
     public void initDefaultCommand() {
@@ -45,8 +44,8 @@ public class DriveTrain extends Subsystem {
     
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-    public void takeJoystickInputs(Joystick right, Joystick left){
-    	robotDrive4.tankDrive(left, right);
+    public static void takeJoystickInputs(){
+    	robotDrive4.tankDrive(OI.getJoystick1(),OI.getJoystick2());
     }
     public static void stop(){
     	robotDrive4.drive(0, 0);
