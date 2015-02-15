@@ -54,12 +54,12 @@ public class OI {
 
 	        joystick2 = new Joystick(1);
 	        
-	        Button joystickButton2 = new JoystickButton(joystick2, 1);
+	        joystickButton2 = new JoystickButton(joystick2, 1);
 	        joystickButton2.whileHeld(new SetDown());
 	        
 	        joystick1 = new Joystick(0);
 	        
-	        Button joystickButton1 = new JoystickButton(joystick1, 1);
+	        joystickButton1 = new JoystickButton(joystick1, 1);
 	        joystickButton1.whileHeld(new Lift());
 
 		    
