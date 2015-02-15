@@ -37,7 +37,7 @@ public class  Drive extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.takeJoystickInputs(Robot.oi.getJoystick1(), Robot.oi.getJoystick2());
+    	DriveTrain.takeJoystickInputs();
     	
     }
 
