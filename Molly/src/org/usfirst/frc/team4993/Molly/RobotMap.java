@@ -47,7 +47,11 @@ public class RobotMap {
         driveTrainRobotDrive4.setSensitivity(0.5);
         driveTrainRobotDrive4.setMaxOutput(1.0);
         
-
+        driveTrainRobotDrive4.setInvertedMotor(RobotDrive.MotorType.kFrontRight, true);
+        driveTrainRobotDrive4.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
+        driveTrainRobotDrive4.setInvertedMotor(RobotDrive.MotorType.kFrontLeft, true);
+        driveTrainRobotDrive4.setInvertedMotor(RobotDrive.MotorType.kRearLeft, true);
+        
         armsSolenoid1 = new Solenoid(0, 0);
         LiveWindow.addActuator("Arms", "Solenoid 1", armsSolenoid1);
         
