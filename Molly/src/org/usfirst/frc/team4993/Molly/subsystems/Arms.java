@@ -12,6 +12,7 @@
 package org.usfirst.frc.team4993.Molly.subsystems;
 
 import org.usfirst.frc.team4993.Molly.RobotMap;
+import org.usfirst.frc.team4993.Molly.commands.Lift;
 
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -38,6 +39,7 @@ public class Arms extends Subsystem {
 	
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+    	setDefaultCommand(new Lift());
     }
     
     public static void On(){
