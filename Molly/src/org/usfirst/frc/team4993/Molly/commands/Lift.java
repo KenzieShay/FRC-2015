@@ -34,9 +34,8 @@ public class  Lift extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Compressor airCompressor = new Compressor(1);
-    	airCompressor.start();
-    	
+    	Compressor compressor1 = Arms.compressor1;
+    	compressor1.start();
     }
 
     // Called repeatedly when this Command is scheduled to run

@@ -23,7 +23,8 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class Arms extends Subsystem {
     
-    public static Solenoid solenoid1 = RobotMap.armsSolenoid1;
+    public static Compressor compressor1 = RobotMap.armsCompressor1;
+	public static Solenoid solenoid1 = RobotMap.armsSolenoid1;
     public static Solenoid solenoid2 = RobotMap.armsSolenoid2;
     public static Solenoid solenoid3 = RobotMap.armsSolenoid3;
     public static Solenoid solenoid4 = RobotMap.armsSolenoid4;
@@ -39,21 +40,21 @@ public class Arms extends Subsystem {
 	
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
-    	setDefaultCommand(new Lift());
+    	
     }
     
     public static void On(){
     	solenoid1.set(true);
     	solenoid2.set(false);
-    	solenoid3.set(true);
-    	solenoid4.set(false);	
+    	solenoid3.set(false);
+    	solenoid4.set(true);	
     }
     
     public static void Down(){
     	solenoid1.set(false);
     	solenoid2.set(true);
-    	solenoid3.set(false);
-    	solenoid4.set(true);
+    	solenoid3.set(true);
+    	solenoid4.set(false);
     }
     
     public static void AuLift(){
