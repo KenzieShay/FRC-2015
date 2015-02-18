@@ -13,6 +13,7 @@ package org.usfirst.frc.team4993.Molly.subsystems;
 
 import org.usfirst.frc.team4993.Molly.RobotMap;
 import org.usfirst.frc.team4993.Molly.commands.Lift;
+import org.usfirst.frc.team4993.Molly.commands.SolOff;
 
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -40,7 +41,7 @@ public class Arms extends Subsystem {
 	
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
-    	
+    	setDefaultCommand(new SolOff());
     }
     
     public static void On(){
@@ -67,7 +68,13 @@ public class Arms extends Subsystem {
     	solenoid2.set(true);
     	solenoid3.set(false);
     	solenoid4.set(true);
-    	
     }
+	
+    public static void Off(){
+		solenoid1.set(false);
+    	solenoid2.set(false);
+    	solenoid3.set(false);
+    	solenoid4.set(false);
+	}
 }
 
