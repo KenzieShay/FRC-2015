@@ -52,11 +52,16 @@ public class DriveTrain extends Subsystem {
     }
     
     public static void AuDrive(){
+    	int x=0;
+    	while (x==0){
     	robotDrive4.setSafetyEnabled(false);
     	Timer.delay(4.0);
     	robotDrive4.drive(-0.4, 0);
     	Timer.delay(2.0);
     	robotDrive4.drive(0, 0);
+    	x++;
+    	}
+    	
     	
     }
 
