@@ -68,8 +68,8 @@ public class Arms extends Subsystem {
 	
     public static void Off(){
 		solenoid1.set(false);
-    	solenoid2.set(true);
-    	solenoid3.set(true);
+    	solenoid2.set(false);
+    	solenoid3.set(false);
     	solenoid4.set(false);
 	}
 }
