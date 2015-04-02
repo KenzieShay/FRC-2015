@@ -63,6 +63,7 @@ public class Arms extends Subsystem {
     	solenoid2.set(false);
     	solenoid3.set(false);
     	solenoid4.set(true);
+    	Timer.delay(4.0);
     	
     }
 	
