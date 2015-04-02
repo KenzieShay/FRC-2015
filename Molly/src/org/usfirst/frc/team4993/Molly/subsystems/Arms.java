@@ -63,17 +63,13 @@ public class Arms extends Subsystem {
     	solenoid2.set(false);
     	solenoid3.set(false);
     	solenoid4.set(true);
-    	Timer.delay(6.0);
-    	solenoid1.set(false);
-    	solenoid2.set(true);
-    	solenoid3.set(true);
-    	solenoid4.set(false);
+    	
     }
 	
     public static void Off(){
 		solenoid1.set(false);
-    	solenoid2.set(false);
-    	solenoid3.set(false);
+    	solenoid2.set(true);
+    	solenoid3.set(true);
     	solenoid4.set(false);
 	}
 }
