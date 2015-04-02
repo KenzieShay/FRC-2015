@@ -54,10 +54,10 @@ public class DriveTrain extends Subsystem {
     public static void AuDrive(){
     	
     	robotDrive4.setSafetyEnabled(false);
-    	Timer.delay(4.0);
     	robotDrive4.drive(-0.4, 0);
     	Timer.delay(2.0);
     	robotDrive4.drive(0, 0);
+    	Timer.delay(28.0);
     	  	
     	
     }
