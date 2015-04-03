@@ -45,8 +45,9 @@ public class DriveTrain extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
     public void takeJoystickInputs(Joystick right, Joystick left){
-    	robotDrive4.tankDrive(left, right);
+    	robotDrive4.tankDrive(left.getY()/2,right.getY()/2);
     }
+
     public static void stop(){
     	robotDrive4.drive(0, 0);
     }
