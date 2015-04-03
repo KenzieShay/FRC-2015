@@ -56,10 +56,8 @@ public class DriveTrain extends Subsystem {
     	
     	robotDrive4.setSafetyEnabled(false);
     	robotDrive4.drive(-0.4, 0);
-    	Timer.delay(2.0);
+    	Timer.delay(3.0);
     	robotDrive4.drive(0, 0);
-    	Timer.delay(28.0);
-    	  	
     	
     }
 
